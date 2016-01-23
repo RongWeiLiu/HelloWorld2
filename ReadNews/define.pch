@@ -1,0 +1,101 @@
+//
+//  define.pch
+//  ReadNews
+//
+//  Created by qianfeng on 15/12/17.
+//  Copyright © 2015年 程来运. All rights reserved.
+//
+
+#ifndef define_pch
+#define define_pch
+#import "TipView.h"
+#import "PublicManager.h"
+
+//全球头视图
+#define CINFO_FOUR_ONE @"http://api.wallstreetcn.com/v2/posts?cid=6&limit=5"
+
+
+
+
+//页面的详情页
+#define CINFO_NEWS_DETAIL @"http://api.wallstreetcn.com/v2/posts/%@"
+
+//页面详情页的数据
+#define CINFO_NEWS_DETAIL_GET @"http://api.wallstreetcn.com/v2/comments?thread_id=%@&down_id=0"
+
+//页面详情页的发送评论
+#define CINFO_NEWS_DETAIL_COMMENT @"http://api.wallstreetcn.com/v2/comments"
+//{"content":"现在都没搞懂到底谁是反对派？","threadId":"103687","parentId":"0"}
+
+//收藏新闻，取消收藏
+#define CINFO_NEWS_SHOUCANG_NEWS @"http://api.wallstreetcn.com/v2/posts/%@/stars"
+
+
+#define CWIDTH self.view.frame.size.width
+
+#define CHEIGHT self.view.frame.size.height
+
+//////////////////// 直播///////////////////////
+//直播
+#define CINFO_ZHIBO_REFRESH @"http://api.wallstreetcn.com/apiv1/livenews-list-v2.json?page=%ld"
+#define CINFO_ZHIBO_COUNT @"http://api.wallstreetcn.com/apiv1/livenews-count.json?nid=%@"
+#define CINFO_ZHIBO_DETAIL_LOGIN @"http://api.wallstreetcn.com:80/v2/livenews/%@/stars"
+#define CINFO_ZHIBO_DETAIL_NOLOGIN @"http://api.wallstreetcn.com:80/v2/livenews/%@"
+
+//收藏直播,取消收藏
+#define CINFO_LIVE_SHOUCANG_ZHIBO @"http://api.wallstreetcn.com:80/v2/livenews/%@/stars"
+
+/////////////////// 行情//////////////////////
+//行情
+#define CINFO_HANGQING_ONE @"http://api.markets.wallstreetcn.com/v1/quotes.json"
+#define CINFO_HANGQING_TWO @"http://api.markets.wallstreetcn.com/v1/quotes.json?channel=forex"
+#define CINFO_HANGQING_THREE @"http://api.markets.wallstreetcn.com/v1/quotes.json?channel=commodity"
+#define CINFO_HANGQING_FOUR @"http://api.markets.wallstreetcn.com/v1/quotes.json?channel=indice"
+#define CINFO_HANGQING_FIVE @"http://api.markets.wallstreetcn.com/v1/quotes.json?channel=bond"
+
+
+///////////////////*************日历**********//////////////////////
+//日历
+#define CINFO_RILI @"http://api.markets.wallstreetcn.com/v1/calendar.json?start=%@&end=%@"
+
+
+//更多
+///////////////************更多*******************//////////////
+//注册
+#define CINFO_MORE_REGIST @"http://api.wallstreetcn.com:80/v2/register"
+
+//登陆
+#define CINFO_MORE_LOGIN @"http://api.wallstreetcn.com:80/v2/login"
+
+//活动
+#define CINFO_MORE_ACTIVITY  @"http://api.wallstreetcn.com:80/apiv1/app_activity_ios.json"
+//上传头像
+#define CINFO_HEADICON_UPLOAD @"http://api.wallstreetcn.com:80/v2/users/avatar"
+
+
+//收藏直播列表
+#define CINFO_MORE_SHOUCANG_ZHIBO @"http://api.wallstreetcn.com:80/v2/livenews/stars?limit=25&page=%d"
+
+
+//收藏新闻列表
+#define CINFO_MY_SHOUCANG_XINWEN @"http://api.wallstreetcn.com:80/v2/posts/stars?limit=%ld&page=%ld"
+
+
+//我的评论
+#define CINFO_MY_PINGLUN @"http://api.wallstreetcn.com:80/v2/user/comments?count=%d"
+//评论我的
+#define CINFO_MORE_MY @"http://api.wallstreetcn.com:80/v2/user/reply/comments?count=%d"
+
+//设置里面精品推荐
+#define CINFO_MORE_SETTING_GOODARTICLE @"http://api.wallstreetcn.com/apiv1/app_recommend.json? app_desc=app_desc&app_title=app_title&down_url=down_url&icon_url=icon_url&ios_down_url=ios_down_url"
+//设置里面的版本更新
+#define CINFO_MORE_SETTING_BANBEN @"http://api.wallstreetcn.com:80/apiv1/ios_version.json"
+
+#define COLOR [UIColor colorWithRed:108.0f/255.0f green:140.0f/255.0f blue:220.0f/255.0f alpha:1]
+
+
+
+// Include any system framework and library headers here that should be included in all compilation units.
+// You will also need to set the Prefix Header build setting of one or more of your targets to reference this file.
+
+#endif /* define_pch */

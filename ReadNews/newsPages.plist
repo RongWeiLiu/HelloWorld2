@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<array>
+	<dict>
+		<key>title</key>
+		<string>全球</string>
+		<key>requestUrl</key>
+		<string>http://api.wallstreetcn.com/v2/posts?type=news,ruanwen&amp;page=%d</string>
+	</dict>
+	<dict>
+		<key>title</key>
+		<string>推荐</string>
+		<key>requestUrl</key>
+		<string>http://api.wallstreetcn.com/v2/posts?cid=11&amp;page=%d</string>
+	</dict>
+	<dict>
+		<key>title</key>
+		<string>央行</string>
+		<key>requestUrl</key>
+		<string>http://api.wallstreetcn.com/v2/posts?cid=20&amp;page=%d</string>
+	</dict>
+	<dict>
+		<key>title</key>
+		<string>经济</string>
+		<key>requestUrl</key>
+		<string>http://api.wallstreetcn.com/v2/posts?cid=19&amp;page=%d</string>
+	</dict>
+	<dict>
+		<key>title</key>
+		<string>公司</string>
+		<key>requestUrl</key>
+		<string>http://api.wallstreetcn.com/v2/posts?cid=22&amp;page=%d</string>
+	</dict>
+	<dict>
+		<key>title</key>
+		<string>中国</string>
+		<key>requestUrl</key>
+		<string>http://api.wallstreetcn.com/v2/posts?cid=17&amp;page=%d</string>
+	</dict>
+	<dict>
+		<key>title</key>
+		<string>欧洲</string>
+		<key>requestUrl</key>
+		<string>http://api.wallstreetcn.com/v2/posts?cid=15&amp;page=%d</string>
+	</dict>
+	<dict>
+		<key>title</key>
+		<string>市场</string>
+		<key>requestUrl</key>
+		<string>http://api.wallstreetcn.com/v2/posts?cid=21&amp;page=%d</string>
+	</dict>
+	<dict>
+		<key>title</key>
+		<string>最热</string>
+		<key>requestUrl</key>
+		<string>http://api.wallstreetcn.com/v2/posts?alias=hotNews&amp;page=%d</string>
+	</dict>
+	<dict>
+		<key>title</key>
+		<string>美国</string>
+		<key>requestUrl</key>
+		<string>http://api.wallstreetcn.com/v2/posts?cid=16&amp;page=%d</string>
+	</dict>
+</array>
+</plist>
